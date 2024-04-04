@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resetting default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background image for the body */
+html {
+    background-image: url("../Img/mainbackground.gif");
+    background-size: cover; /* Ensure background image covers the entire viewport */
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    height: 10vh;
+    background-color: #653e1a;  
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Navigation styles */
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin: 0 10px;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Change link color */
+    padding: 10px 20px; /* Add padding to improve clickability */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #040ecf; /* Change background color on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
+
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 20px; /* Adjust as necessary */
+  }
+  
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+  }
+  
+  .child-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /* Add responsiveness to cater for mobile views */
+@media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .image-content {
+      order: -1; /* This will put the image above the text on smaller screens */
+    }
+  }
+
+
+/* Main content styles */
+main {
+    background-color: #f4f4f4ee;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+
+
+
+/* Add to your existing CSS */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Adjust padding as needed */
+    background-color: #F0EAD6; /* Background color of the container */
+  }
+  
+  .video-container {
+    position: relative;
+    flex-basis: 50%; /* adjust the width of the video container */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .sustainability-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes bottom margin/padding on image */
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px; /* Play button size */
+    height: 64px; /* Play button size */
+    background: url('/path-to-your-play-icon.png') no-repeat center center;
+    background-size: contain;
+    cursor: pointer; /* if the button is clickable */
+  }
+  
+  .text-content {
+    flex-basis: 50%; /* adjust the width of the text content */
+    padding: 20px; /* Adjust the padding as needed */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds some depth */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #841617; /* Hershey's brand color for buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px; /* Optional: if you want rounded corners */
+    font-weight: bold;
+  }
+  
+
+
+
+
+/* Add this to your CSS file */
+
+main .banner {
+    position: relative;
+    display: flex;
+    align-items: center; /* This will vertically center the .info-box */
+    justify-content: start; /* Aligns children to the start of the flex container */
+  }
+  
+  main .info-box {
+    position: absolute;
+    left: 2em; /* Adjust the space from the left edge of the container */
+    top: 2em; /* Adjust the space from the top edge of the container */
+    width: 300px; /* Adjust the width of the info box */
+    background-color: white;
+    padding: 1em;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow to the box */
+    z-index: 2; /* Ensures the info box appears above the image */
+  }
+  
+  main .banner-image {
+    width: 100%; /* Ensure the image covers the full width of its container */
+    height: auto;
+    position: relative;
+    z-index: 1; /* Ensures the image stays behind the info box */
+  }
+  
+  main .learn-more {
+    background-color: #6d1a36; /* Hershey's brand color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block; /* Needed to apply padding */
+    border-radius: 2em; /* Gives the button pill-shaped rounded corners */
+    margin-top: 1em; /* Adds space above the button */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    main .banner {
+      flex-direction: column;
+    }
+  
+    main .info-box {
+      position: static; /* Removes the absolute positioning */
+      width: auto; /* Takes the full width of the screen */
+      margin: 1em; /* Adds some margin around the box */
+      box-shadow: none; /* Optional: Removes shadow for a flatter design */
+    }
+  
+    main .banner-image {
+      order: -1; /* Puts the image above the text box */
+    }
+  }
+
+  
+
+
+
+  /* Add this to your existing CSS file */
+
+.promo-section {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .promo-bg-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any extra space beneath the image */
+  }
+  
+  .promo-info {
+    position: absolute;
+    right: 10%; /* Adjust the right positioning as needed */
+    top: 10%; /* Adjust the top positioning as needed */
+    background-color: white;
+    padding: 2em;
+    width: 20%; /* Adjust the width as needed */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    z-index: 10; /* Ensures the text box is above the background image */
+  }
+  
+  .promo-cta-button {
+    background-color: #6d1a36; /* Adjust the button color as needed */
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 20px; /* Gives the button rounded edges */
+    display: inline-block; /* Allows the padding and margin to be applied */
+    margin-top: 1em;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .promo-info {
+      position: static; /* Resets positioning on smaller screens */
+      width: auto; /* Takes full width of the container */
+      margin: 20px;
+      box-shadow: none; /* Optional: Removes the shadow */
+      text-align: center; /* Centers the text */
+    }
+  
+    .promo-cta-button {
+      display: block; /* Allows button to take full width */
+      margin: 20px auto; /* Centers button horizontally with auto margins */
+    }
+  }
+  
+
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #653e1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0 0 2rem 2rem;
+}
+
+/* Blockpick styles */
+.blockpick {
+    width: 20vw;
+    height: 20vw;
+    background-image:url("../Img/hershey-bars-advert-about-1960-2A4X35N.jpg");
+    background-size: cover;
+    margin-bottom: 1rem;
+}
+.Rblockpick {
+    width: 20vw;
+    height: 20vw;
+    background-image:url("../Img/hersheys-vegan-chocolate.jpeg");
+    background-size: cover;
+    margin-bottom: 1rem;
+
+}
+
+.left {
+    float: left;
+    margin-right: 0.5rem;
+}
+
+.right {
+    float: right;
+    margin-left: 0.5rem; /* Changed margin-right to margin-left */
+}
+
+    
