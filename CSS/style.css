@@ -80,6 +80,7 @@ header {
 /* Navigation styles */
 nav {
     text-align: right;
+    padding: 0;
 }
 
 nav ul {
@@ -122,9 +123,7 @@ nav ul li a:hover {
         margin: 10px 0; /* Adjust margin for smaller screens */
     }
 }
-body *{
-    
-}
+
 
 .content-container {
     display: flex;
