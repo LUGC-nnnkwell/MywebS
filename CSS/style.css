@@ -6,7 +6,7 @@
     scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
-h1{
+*{
     font-family: "Lato";
 }
 #logo{
@@ -102,7 +102,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; /* Change link color */
+    color: #000000; /* Change link color */
     padding: 10px 20px; /* Add padding to improve clickability */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
@@ -133,14 +133,14 @@ nav ul li a:hover {
   
   .text-content {
     flex: 1;
-    padding-right: 20px; /* Adjust as necessary */
+    padding-right: 20px; 
   }
   
   .image-content {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center; /* Center image vertically */
+    justify-content: center; 
+    align-items: center; 
   }
   
   .child-image {
@@ -156,7 +156,7 @@ nav ul li a:hover {
     }
   
     .image-content {
-      order: -1; /* This will put the image above the text on smaller screens */
+      order: -1; 
     }
   }
 
