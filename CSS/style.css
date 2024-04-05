@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+:root {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+h1{
+    font-family: "Lato";
+}
+#logo{
+    margin: -66px;
+    margin-left: 0px;
+    left: 20px;
+}
+#logo2{
+    margin: -10px;
+    margin-left: 0px;
+    right: 20px;
+}
+
+
+#certainimage {
+    width: 500px;
+    height: 500px;
+    background-image: url("../Img/71qEw6ITd-L._AC_UF350\,350_QL80_.jpg");
+    background-size: cover
+}
+
+#promo-section04{
+    width: 500px;
+    height: 500px;
+    background-image: url("../Img/81JwUGLhcXL._AC_UF1000\,1000_QL80_.jpg");
+    background-size: cover
+}
+
+
+
+
+
 
 * {
     margin: 0;
@@ -13,16 +54,15 @@ html, body {
 
 /* Background image for the body */
 html {
-    background-image: url("../Img/mainbackground.gif");
+    background-image: url("../Img/ezgif.com-gif-maker.gif");
     background-size: cover; /* Ensure background image covers the entire viewport */
 }
 
 body {
-
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 40px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
 }
 
@@ -33,6 +73,7 @@ header {
     padding: 1rem;
     border-radius: 2rem 2rem 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 
@@ -81,13 +122,14 @@ nav ul li a:hover {
         margin: 10px 0; /* Adjust margin for smaller screens */
     }
 }
-
+body *{
+    
+}
 
 .content-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
   }
   
   .text-content {
@@ -122,12 +164,17 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-    background-color: #f4f4f4ee;
+    background-color: #fffffff2;
     padding: 1rem;
     overflow: hidden;
+    margin: auto;
 }
 
-
+main {
+    text-align: center;
+    justify-content: center;
+    display: ruby-text;
+}
 
 
 /* Add to your existing CSS */
@@ -150,18 +197,7 @@ main {
     height: auto;
     display: block; /* Removes bottom margin/padding on image */
   }
-  
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 64px; /* Play button size */
-    height: 64px; /* Play button size */
-    background: url('/path-to-your-play-icon.png') no-repeat center center;
-    background-size: contain;
-    cursor: pointer; /* if the button is clickable */
-  }
+
   
   .text-content {
     flex-basis: 50%; /* adjust the width of the text content */
@@ -185,7 +221,7 @@ main {
 
 
 
-/* Add this to your CSS file */
+
 
 main .banner {
     position: relative;
@@ -195,7 +231,6 @@ main .banner {
   }
   
   main .info-box {
-    position: absolute;
     left: 2em; /* Adjust the space from the left edge of the container */
     top: 2em; /* Adjust the space from the top edge of the container */
     width: 300px; /* Adjust the width of the info box */
@@ -253,6 +288,7 @@ main .banner {
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     margin: 0; /* Removes default margin */
+    padding: 70px;
   }
   
   .promo-bg-image {
@@ -262,7 +298,6 @@ main .banner {
   }
   
   .promo-info {
-    position: absolute;
     right: 10%; /* Adjust the right positioning as needed */
     top: 10%; /* Adjust the top positioning as needed */
     background-color: white;
@@ -340,3 +375,152 @@ footer {
 }
 
     
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* So that width includes padding */
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background: #5c87b2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #45697e;
+    transition: background-color 0.3s ease;
+}
+
+/* Add responsiveness to the contact form */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #653e1a;  /* Match the color to your screenshot */
+    color: white;
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #aaaaaa; /* Lighten the link color on hover */
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: start;
+}
+
+.footer-socials li {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: right;
+    padding-top: 10px;
+    border-top: 1px solid #444; /* Slight border for the top edge */
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
