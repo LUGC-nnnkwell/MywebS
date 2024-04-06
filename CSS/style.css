@@ -102,13 +102,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000; /* Change link color */
-    padding: 10px 20px; /* Add padding to improve clickability */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    color: #000000; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:hover {
-    background-color: #040ecf; /* Change background color on hover */
+    background-color: #040ecf; 
 }
 
 
@@ -120,7 +120,7 @@ nav ul li a:hover {
 
     nav ul li {
         display: block;
-        margin: 10px 0; /* Adjust margin for smaller screens */
+        margin: 10px 0; 
     }
 }
 
@@ -181,38 +181,38 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px; /* Adjust padding as needed */
-    background-color: #F0EAD6; /* Background color of the container */
+    padding: 50px; 
+    background-color: #F0EAD6; 
   }
   
   .video-container {
     position: relative;
-    flex-basis: 50%; /* adjust the width of the video container */
-    margin-right: 20px; /* Space between text and image */
+    flex-basis: 50%; 
+    margin-right: 20px;
   }
   
   .sustainability-image {
     width: 100%;
     height: auto;
-    display: block; /* Removes bottom margin/padding on image */
+    display: block; 
   }
 
   
   .text-content {
-    flex-basis: 50%; /* adjust the width of the text content */
-    padding: 20px; /* Adjust the padding as needed */
+    flex-basis: 50%; 
+    padding: 20px; 
     background: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds some depth */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
   }
   
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #841617; /* Hershey's brand color for buttons */
+    background-color: #841617; 
     color: white;
     text-decoration: none;
-    border-radius: 4px; /* Optional: if you want rounded corners */
+    border-radius: 4px; 
     font-weight: bold;
   }
   
@@ -370,7 +370,7 @@ footer {
 
 .right {
     float: right;
-    margin-left: 0.5rem; /* Changed margin-right to margin-left */
+    margin-left: 0.5rem; 
 }
 
     
@@ -452,7 +452,7 @@ body {
 
 
 footer {
-    background-color: #653e1a;  /* Match the color to your screenshot */
+    background-color: #653e1a;  
     color: white;
     font-size: 0.9em;
     padding: 20px 0;
@@ -481,7 +481,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #aaaaaa; /* Lighten the link color on hover */
+    color: #aaaaaa; 
 }
 
 .footer-socials {
@@ -496,7 +496,7 @@ footer {
 .footer-bottom {
     text-align: right;
     padding-top: 10px;
-    border-top: 1px solid #444; /* Slight border for the top edge */
+    border-top: 1px solid #444; 
     margin-top: 20px;
 }
 
